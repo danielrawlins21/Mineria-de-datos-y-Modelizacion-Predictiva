@@ -1,0 +1,72 @@
+# ----------------------------
+# Python
+# ----------------------------
+__pycache__/
+*.py[cod]
+*.pyd
+*.so
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# Virtual envs
+.venv/
+venv/
+env/
+ENV/
+
+# ----------------------------
+# Jupyter / IPython
+# ----------------------------
+.ipynb_checkpoints/
+.profile_default/
+*.ipynb
+
+# (Si quieres versionar notebooks, borra la línea *.ipynb
+# y deja solo .ipynb_checkpoints/)
+
+# ----------------------------
+# VSCode / IDEs
+# ----------------------------
+.vscode/
+.idea/
+*.iml
+
+# ----------------------------
+# OS / WSL
+# ----------------------------
+.DS_Store
+Thumbs.db
+
+# ----------------------------
+# Logs / caches
+# ----------------------------
+*.log
+.cache/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ----------------------------
+# Env vars / secrets
+# ----------------------------
+.env
+.env.*
+!.env.example
+
+# ----------------------------
+# Data & artifacts
+# ----------------------------
+data/
+!data/**/.gitkeep
+models_artifacts/
+reports/figures/
+reports/results/
+
+# ----------------------------
+# Coverage
+# ----------------------------
+.coverage
+htmlcov/
+coverage.xml
