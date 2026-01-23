@@ -1,0 +1,33 @@
+=== RESUMEN DE IMPORTACIÓN ===
+Archivo: DatosEleccionesEspaña.xlsx
+Dimensiones (filas, columnas): 8117, 28
+
+=== VARIABLES (COLUMNAS) ===
+01. CodigoProvincia
+02. TotalCensus
+03. AbstentionPtge
+04. Age_under19_Ptge
+05. Age_19_65_pct
+06. WomanPopulationPtge
+07. ForeignersPtge
+08. DifComAutonPtge
+09. SameComAutonDiffProvPtge
+10. UnemployLess25_Ptge
+11. UnemployMore40_Ptge
+12. AgricultureUnemploymentPtge
+13. IndustryUnemploymentPtge
+14. ConstructionUnemploymentPtge
+15. ServicesUnemploymentPtge
+16. SUPERFICIE
+17. PobChange_pct
+18. Explotaciones
+19. Name
+20. CCAA
+21. ActividadPpal
+22. Densidad
+23. Izda_Pct
+24. Dcha_Pct
+25. Otros_Pct
+26. AbstencionAlta
+27. Izquierda
+28. Derecha
