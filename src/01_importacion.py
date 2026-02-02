@@ -49,6 +49,8 @@ def main():
 
     # --- 4) Listar nombres de variables ---
     columnas = df.columns.tolist()
+    # --- 5) Listar tipos de datos de cada columna ---
+    tipos_datos = df.dtypes
 
     # --- Salidas por consola (útil para ejecutar rápido) ---
     print("\n=== CARGA COMPLETADA ===")
@@ -58,9 +60,9 @@ def main():
     print("\n=== PRIMERAS 10 FILAS ===")
     print(head_df)
 
-    print("\n=== NOMBRES DE VARIABLES ===")
-    for i, col in enumerate(columnas, start=1):
-        print(f"{i:02d}. {col}")
+    print("\n=== NOMBRES DE VARIABLES Y TIPOS DE DATOS ===")
+    for i, (col, tipo) in enumerate(zip(columnas, tipos_datos), start=1):
+        print(f"{i:02d}. {col} ({tipo})")
 
     # --- 5) Guardar salidas para el informe ---
     # 5.1 Guardar primeras filas como CSV (fácil de pegar/consultar)

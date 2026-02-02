@@ -1,0 +1,17 @@
+HU-0.4 EDA mínimo de variables objetivo
+=======================================
+
+Variable objetivo CONTINUA candidata: AbstentionPtge
+- n válidos: 8117 | missing: 0
+- min=0.000 | q25=21.678 | mediana=26.424 | q75=31.471 | max=57.576
+- asimetría=-0.054 | curtosis=0.494
+- Figura guardada: HU04_hist_AbstentionPtge.png
+Posibles incidencias (alertas tempranas):
+  * No se detectan incidencias relevantes en este EDA mínimo.
+
+Variable objetivo BINARIA candidata: AbstencionAlta
+- n válidos: 8117 | missing: 0
+- P(1)=31.1% | P(0)=68.9% | valores únicos válidos: [0, 1]
+- Figura guardada: HU04_barras_AbstencionAlta.png
+Posibles incidencias (alertas tempranas):
+  * No se detectan incidencias relevantes en este EDA mínimo.
