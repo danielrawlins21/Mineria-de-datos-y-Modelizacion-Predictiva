@@ -1,8 +1,8 @@
 import pandas as pd
 from config import DATA_DIR
 
-DEP_BASE_FILE = DATA_DIR / "datos_dep_base.parquet"
-DEP_ERR_FILE = DATA_DIR / "datos_dep_err_corr.parquet"
+DEP_BASE_FILE = DATA_DIR / "interim/datos_dep_base.parquet"
+DEP_ERR_FILE = DATA_DIR / "interim/datos_dep_err_corr.parquet"
 
 def cargar_datos() -> pd.DataFrame:
     return pd.read_parquet(DEP_BASE_FILE)
