@@ -1,5 +1,5 @@
 import pandas as pd
-from src.config import DEP_BASE_FILE, TABLES_DIR
+from config import DEP_BASE_FILE, TABLES_DIR
 
 def cargar_datos() -> pd.DataFrame:
     """Carga el dataset depurado base."""
