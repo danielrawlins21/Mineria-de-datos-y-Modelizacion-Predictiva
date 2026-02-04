@@ -1,0 +1,7 @@
+Metodo,R2_train,N_parametros,N_continuas_sel,N_categoricas_sel,N_interacciones_sel
+Backward AIC,0.36961263397138433,34,0,0,0
+Forward AIC,0.3696126339713842,34,0,0,0
+Stepwise AIC,0.3696126339713842,34,0,0,0
+Forward BIC,0.36703463429613425,30,0,0,0
+Stepwise BIC,0.36703463429613425,30,0,0,0
+Backward BIC,0.36703463429613403,30,0,0,0
