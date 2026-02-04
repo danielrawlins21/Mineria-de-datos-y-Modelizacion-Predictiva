@@ -1,0 +1,66 @@
+{
+  "input_file": "D:\\Copias de seguridad\\2025-2026\\Master UCM\\Módulo 7\\Tarea\\modelizacion-prediccion\\data\\interim\\datos_dep_alfa.parquet",
+  "y_cont_name": "AbstentionPtge",
+  "targets_dropped": [
+    "Izda_Pct",
+    "Dcha_Pct",
+    "Otros_Pct",
+    "AbstencionAlta",
+    "Izquierda",
+    "Derecha",
+    "Name",
+    "Explotaciones",
+    "Explotaciones_win",
+    "CodigoProvincia"
+  ],
+  "n_rows": 8110,
+  "n_cols_total": 30,
+  "n_cols_X": 19,
+  "n_vars_num": 15,
+  "n_vars_cat": 4,
+  "test_size": 0.2,
+  "random_state": 1234567,
+  "duplicated_rows_X": 0,
+  "top10_nulos_var": {
+    "TotalCensus": {
+      "Nulos": 0,
+      "PctNulos": 0.0
+    },
+    "Age_under19_Ptge": {
+      "Nulos": 0,
+      "PctNulos": 0.0
+    },
+    "Age_19_65_pct": {
+      "Nulos": 0,
+      "PctNulos": 0.0
+    },
+    "WomanPopulationPtge": {
+      "Nulos": 0,
+      "PctNulos": 0.0
+    },
+    "ForeignersPtge": {
+      "Nulos": 0,
+      "PctNulos": 0.0
+    },
+    "DifComAutonPtge": {
+      "Nulos": 0,
+      "PctNulos": 0.0
+    },
+    "SameComAutonDiffProvPtge": {
+      "Nulos": 0,
+      "PctNulos": 0.0
+    },
+    "UnemployLess25_Ptge": {
+      "Nulos": 0,
+      "PctNulos": 0.0
+    },
+    "UnemployMore40_Ptge": {
+      "Nulos": 0,
+      "PctNulos": 0.0
+    },
+    "AgricultureUnemploymentPtge": {
+      "Nulos": 0,
+      "PctNulos": 0.0
+    }
+  }
+}
