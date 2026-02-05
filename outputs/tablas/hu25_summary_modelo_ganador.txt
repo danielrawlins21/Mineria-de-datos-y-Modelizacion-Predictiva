@@ -1,0 +1,59 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                      y   R-squared:                       0.370
+Model:                            OLS   Adj. R-squared:                  0.366
+Method:                 Least Squares   F-statistic:                     114.7
+Date:                Thu, 05 Feb 2026   Prob (F-statistic):               0.00
+Time:                        21:43:04   Log-Likelihood:                -20827.
+No. Observations:                6488   AIC:                         4.172e+04
+Df Residuals:                    6454   BIC:                         4.195e+04
+Df Model:                          33                                         
+Covariance Type:            nonrobust                                         
+================================================================================================
+                                   coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------------------
+const                           32.1192      1.387     23.153      0.000      29.400      34.839
+Age_under19_Ptge                 0.0963      0.018      5.238      0.000       0.060       0.132
+Age_19_65_pct                   -0.0758      0.013     -5.737      0.000      -0.102      -0.050
+ForeignersPtge                   0.0524      0.011      4.611      0.000       0.030       0.075
+DifComAutonPtge                  0.0448      0.010      4.475      0.000       0.025       0.064
+IndustryUnemploymentPtge         0.0264      0.006      4.108      0.000       0.014       0.039
+ConstructionUnemploymentPtge     0.0419      0.006      7.024      0.000       0.030       0.054
+ServicesUnemploymentPtge         0.0232      0.004      6.620      0.000       0.016       0.030
+SUPERFICIE                    5.017e-05   8.85e-06      5.669      0.000    3.28e-05    6.75e-05
+WomanPopulationPtge             -0.0345      0.021     -1.677      0.094      -0.075       0.006
+CCAA_Aragón                     -1.4840      0.389     -3.820      0.000      -2.246      -0.722
+CCAA_Asturias                    5.1875      0.809      6.411      0.000       3.601       6.774
+CCAA_Baleares                    4.2362      0.886      4.781      0.000       2.499       5.973
+CCAA_Canarias                    5.3799      0.742      7.251      0.000       3.925       6.834
+CCAA_Cantabria                  -1.2291      0.732     -1.678      0.093      -2.665       0.206
+CCAA_CastillaLeón               -1.9595      0.334     -5.861      0.000      -2.615      -1.304
+CCAA_CastillaMancha             -4.7570      0.380    -12.513      0.000      -5.502      -4.012
+CCAA_Cataluña                    6.5087      0.360     18.070      0.000       5.803       7.215
+CCAA_ComValenciana              -6.7268      0.401    -16.774      0.000      -7.513      -5.941
+CCAA_Extremadura                -0.8978      0.439     -2.046      0.041      -1.758      -0.038
+CCAA_Galicia                     2.2766      0.484      4.701      0.000       1.327       3.226
+CCAA_Madrid                     -3.8410      0.591     -6.501      0.000      -4.999      -2.683
+CCAA_Murcia                     -3.3835      0.997     -3.394      0.001      -5.338      -1.429
+CCAA_Navarra                     3.1510      0.509      6.192      0.000       2.153       4.149
+CCAA_PaísVasco                   4.2362      0.514      8.234      0.000       3.228       5.245
+CCAA_Rioja                      -7.0267      0.608    -11.555      0.000      -8.219      -5.835
+ActividadPpal_Construccion      -3.0017      1.619     -1.854      0.064      -6.176       0.173
+ActividadPpal_Industria         -0.7615      1.914     -0.398      0.691      -4.514       2.991
+ActividadPpal_Otro              -1.9537      0.260     -7.527      0.000      -2.463      -1.445
+ActividadPpal_Servicios         -1.3533      0.336     -4.024      0.000      -2.013      -0.694
+Densidad_Baja                   -0.6164      0.366     -1.686      0.092      -1.333       0.100
+Densidad_Desconocida            -1.4976      0.772     -1.940      0.052      -3.010       0.015
+Densidad_MuyBaja                -1.6322      0.368     -4.437      0.000      -2.353      -0.911
+Explotaciones_cat_≤137          -0.9415      0.227     -4.141      0.000      -1.387      -0.496
+==============================================================================
+Omnibus:                      242.255   Durbin-Watson:                   1.994
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              578.606
+Skew:                           0.200   Prob(JB):                    2.28e-126
+Kurtosis:                       4.407   Cond. No.                     2.89e+05
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 2.89e+05. This might indicate that there are
+strong multicollinearity or other numerical problems.
