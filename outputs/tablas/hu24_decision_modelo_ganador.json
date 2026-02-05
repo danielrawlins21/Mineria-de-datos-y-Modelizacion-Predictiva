@@ -1,0 +1,35 @@
+{
+  "ganador": "Backward AIC",
+  "umbral_empate": 0.0002,
+  "best_mean": 0.361507,
+  "near_models": [
+    {
+      "Modelo": "Backward AIC",
+      "count": 100,
+      "mean": 0.361507,
+      "std": 0.01916,
+      "median": 0.362064,
+      "min": 0.321908,
+      "max": 0.401661
+    },
+    {
+      "Modelo": "Stepwise AIC",
+      "count": 100,
+      "mean": 0.361507,
+      "std": 0.01916,
+      "median": 0.362064,
+      "min": 0.321908,
+      "max": 0.401661
+    }
+  ],
+  "cv": {
+    "n_splits": 5,
+    "n_reps": 20,
+    "base_seed": 123
+  },
+  "outputs": {
+    "results_csv": "D:\\Copias de seguridad\\2025-2026\\Master UCM\\Módulo 7\\Tarea\\modelizacion-prediccion\\outputs\\tablas\\hu24_resultados_cv_repetida_4_modelos.csv",
+    "summary_csv": "D:\\Copias de seguridad\\2025-2026\\Master UCM\\Módulo 7\\Tarea\\modelizacion-prediccion\\outputs\\tablas\\hu24_resumen_cv_repetida_4_modelos.csv",
+    "figure": "D:\\Copias de seguridad\\2025-2026\\Master UCM\\Módulo 7\\Tarea\\modelizacion-prediccion\\outputs\\figuras\\hu24_boxplot_cv_4_modelos.png"
+  }
+}
