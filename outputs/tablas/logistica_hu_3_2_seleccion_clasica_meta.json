@@ -1,0 +1,164 @@
+{
+  "input_files": {
+    "X_train": "D:\\Copias de seguridad\\2025-2026\\Master UCM\\Módulo 7\\Tarea\\modelizacion-prediccion\\data\\processed\\logistica\\X_train_logistica.parquet",
+    "X_test": "D:\\Copias de seguridad\\2025-2026\\Master UCM\\Módulo 7\\Tarea\\modelizacion-prediccion\\data\\processed\\logistica\\X_test_logistica.parquet",
+    "y_train": "D:\\Copias de seguridad\\2025-2026\\Master UCM\\Módulo 7\\Tarea\\modelizacion-prediccion\\data\\processed\\logistica\\y_train_logistica.parquet",
+    "y_test": "D:\\Copias de seguridad\\2025-2026\\Master UCM\\Módulo 7\\Tarea\\modelizacion-prediccion\\data\\processed\\logistica\\y_test_logistica.parquet"
+  },
+  "cutoff_provisional": 0.5,
+  "n_train": 6488,
+  "n_test": 1622,
+  "n_vars_cont_total": 15,
+  "n_vars_categ_total": 4,
+  "resumen_completo": [
+    {
+      "Modelo": "Forward AIC",
+      "PseudoR2_train": 0.2592966412052812,
+      "PseudoR2_test": 0.24734998153676957,
+      "Acc_train@0.5": 0.7906905055487053,
+      "Acc_test@0.5": 0.7953144266337855,
+      "N_parametros_aprox": 33,
+      "N_vars_cont": 8,
+      "N_vars_categ": 4,
+      "Vars_cont": [
+        "DifComAutonPtge",
+        "Age_19_65_pct",
+        "SUPERFICIE",
+        "ForeignersPtge",
+        "ConstructionUnemploymentPtge",
+        "WomanPopulationPtge",
+        "AgricultureUnemploymentPtge",
+        "SameComAutonDiffProvPtge"
+      ],
+      "Vars_categ": [
+        "CCAA",
+        "ActividadPpal",
+        "Densidad",
+        "Explotaciones_cat"
+      ]
+    },
+    {
+      "Modelo": "Forward BIC",
+      "PseudoR2_train": 0.2592966412052812,
+      "PseudoR2_test": 0.24734998153676957,
+      "Acc_train@0.5": 0.7906905055487053,
+      "Acc_test@0.5": 0.7953144266337855,
+      "N_parametros_aprox": 33,
+      "N_vars_cont": 8,
+      "N_vars_categ": 4,
+      "Vars_cont": [
+        "DifComAutonPtge",
+        "Age_19_65_pct",
+        "SUPERFICIE",
+        "ForeignersPtge",
+        "ConstructionUnemploymentPtge",
+        "WomanPopulationPtge",
+        "AgricultureUnemploymentPtge",
+        "SameComAutonDiffProvPtge"
+      ],
+      "Vars_categ": [
+        "CCAA",
+        "ActividadPpal",
+        "Densidad",
+        "Explotaciones_cat"
+      ]
+    },
+    {
+      "Modelo": "Stepwise AIC",
+      "PseudoR2_train": 0.25890038344330846,
+      "PseudoR2_test": 0.2473143847667466,
+      "Acc_train@0.5": 0.7902281134401973,
+      "Acc_test@0.5": 0.7953144266337855,
+      "N_parametros_aprox": 32,
+      "N_vars_cont": 7,
+      "N_vars_categ": 4,
+      "Vars_cont": [
+        "DifComAutonPtge",
+        "Age_19_65_pct",
+        "SUPERFICIE",
+        "ForeignersPtge",
+        "ConstructionUnemploymentPtge",
+        "WomanPopulationPtge",
+        "AgricultureUnemploymentPtge"
+      ],
+      "Vars_categ": [
+        "CCAA",
+        "ActividadPpal",
+        "Densidad",
+        "Explotaciones_cat"
+      ]
+    },
+    {
+      "Modelo": "Stepwise BIC",
+      "PseudoR2_train": 0.25890038344330846,
+      "PseudoR2_test": 0.2473143847667466,
+      "Acc_train@0.5": 0.7902281134401973,
+      "Acc_test@0.5": 0.7953144266337855,
+      "N_parametros_aprox": 32,
+      "N_vars_cont": 7,
+      "N_vars_categ": 4,
+      "Vars_cont": [
+        "DifComAutonPtge",
+        "Age_19_65_pct",
+        "SUPERFICIE",
+        "ForeignersPtge",
+        "ConstructionUnemploymentPtge",
+        "WomanPopulationPtge",
+        "AgricultureUnemploymentPtge"
+      ],
+      "Vars_categ": [
+        "CCAA",
+        "ActividadPpal",
+        "Densidad",
+        "Explotaciones_cat"
+      ]
+    },
+    {
+      "Modelo": "Backward AIC",
+      "PseudoR2_train": 0.2574296629899804,
+      "PseudoR2_test": 0.2461095207138938,
+      "Acc_train@0.5": 0.7922318125770653,
+      "Acc_test@0.5": 0.7885326757090012,
+      "N_parametros_aprox": 30,
+      "N_vars_cont": 6,
+      "N_vars_categ": 3,
+      "Vars_cont": [
+        "Age_19_65_pct",
+        "ForeignersPtge",
+        "DifComAutonPtge",
+        "ConstructionUnemploymentPtge",
+        "SUPERFICIE",
+        "WomanPopulationPtge"
+      ],
+      "Vars_categ": [
+        "CCAA",
+        "ActividadPpal",
+        "Densidad"
+      ]
+    },
+    {
+      "Modelo": "Backward BIC",
+      "PseudoR2_train": 0.2574296629899804,
+      "PseudoR2_test": 0.2461095207138938,
+      "Acc_train@0.5": 0.7922318125770653,
+      "Acc_test@0.5": 0.7885326757090012,
+      "N_parametros_aprox": 30,
+      "N_vars_cont": 6,
+      "N_vars_categ": 3,
+      "Vars_cont": [
+        "Age_19_65_pct",
+        "ForeignersPtge",
+        "DifComAutonPtge",
+        "ConstructionUnemploymentPtge",
+        "SUPERFICIE",
+        "WomanPopulationPtge"
+      ],
+      "Vars_categ": [
+        "CCAA",
+        "ActividadPpal",
+        "Densidad"
+      ]
+    }
+  ],
+  "tabla_resumen_file": "D:\\Copias de seguridad\\2025-2026\\Master UCM\\Módulo 7\\Tarea\\modelizacion-prediccion\\outputs\\tablas\\logistica_hu_3_2_seleccion_clasica_resumen.csv"
+}

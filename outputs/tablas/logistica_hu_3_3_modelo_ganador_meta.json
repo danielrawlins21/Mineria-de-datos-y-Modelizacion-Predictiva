@@ -1,0 +1,91 @@
+{
+  "input_table": "D:\\Copias de seguridad\\2025-2026\\Master UCM\\Módulo 7\\Tarea\\modelizacion-prediccion\\outputs\\tablas\\logistica_hu_3_2_seleccion_clasica_resumen.csv",
+  "params": {
+    "max_candidatos": 4,
+    "umbral_gap_acc": 0.05,
+    "metrica_principal": "PseudoR2_test",
+    "metrica_secundaria": "N_parametros_aprox",
+    "punto_corte_provisional": 0.5
+  },
+  "n_modelos_hu32": 6,
+  "n_candidatos": 4,
+  "ganador": {
+    "Modelo": "Forward AIC",
+    "PseudoR2_train": 0.2592966412052812,
+    "PseudoR2_test": 0.2473499815367695,
+    "Acc_train@0.5": 0.7906905055487053,
+    "Acc_test@0.5": 0.7953144266337855,
+    "N_parametros_aprox": 33,
+    "N_vars_cont": 8,
+    "N_vars_categ": 4,
+    "Gap_Acc": 0.0046239210850801404
+  },
+  "top_resumen": [
+    {
+      "Modelo": "Forward AIC",
+      "PseudoR2_train": 0.2592966412052812,
+      "PseudoR2_test": 0.2473499815367695,
+      "Acc_train@0.5": 0.7906905055487053,
+      "Acc_test@0.5": 0.7953144266337855,
+      "N_parametros_aprox": 33,
+      "N_vars_cont": 8,
+      "N_vars_categ": 4,
+      "Gap_Acc": 0.0046239210850801404
+    },
+    {
+      "Modelo": "Forward BIC",
+      "PseudoR2_train": 0.2592966412052812,
+      "PseudoR2_test": 0.2473499815367695,
+      "Acc_train@0.5": 0.7906905055487053,
+      "Acc_test@0.5": 0.7953144266337855,
+      "N_parametros_aprox": 33,
+      "N_vars_cont": 8,
+      "N_vars_categ": 4,
+      "Gap_Acc": 0.0046239210850801404
+    },
+    {
+      "Modelo": "Stepwise AIC",
+      "PseudoR2_train": 0.2589003834433084,
+      "PseudoR2_test": 0.2473143847667466,
+      "Acc_train@0.5": 0.7902281134401973,
+      "Acc_test@0.5": 0.7953144266337855,
+      "N_parametros_aprox": 32,
+      "N_vars_cont": 7,
+      "N_vars_categ": 4,
+      "Gap_Acc": 0.00508631319358821
+    },
+    {
+      "Modelo": "Stepwise BIC",
+      "PseudoR2_train": 0.2589003834433084,
+      "PseudoR2_test": 0.2473143847667466,
+      "Acc_train@0.5": 0.7902281134401973,
+      "Acc_test@0.5": 0.7953144266337855,
+      "N_parametros_aprox": 32,
+      "N_vars_cont": 7,
+      "N_vars_categ": 4,
+      "Gap_Acc": 0.00508631319358821
+    },
+    {
+      "Modelo": "Backward AIC",
+      "PseudoR2_train": 0.2574296629899804,
+      "PseudoR2_test": 0.2461095207138938,
+      "Acc_train@0.5": 0.7922318125770653,
+      "Acc_test@0.5": 0.7885326757090012,
+      "N_parametros_aprox": 30,
+      "N_vars_cont": 6,
+      "N_vars_categ": 3,
+      "Gap_Acc": 0.0036991368680641123
+    },
+    {
+      "Modelo": "Backward BIC",
+      "PseudoR2_train": 0.2574296629899804,
+      "PseudoR2_test": 0.2461095207138938,
+      "Acc_train@0.5": 0.7922318125770653,
+      "Acc_test@0.5": 0.7885326757090012,
+      "N_parametros_aprox": 30,
+      "N_vars_cont": 6,
+      "N_vars_categ": 3,
+      "Gap_Acc": 0.0036991368680641123
+    }
+  ]
+}

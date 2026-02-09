@@ -1,0 +1,2 @@
+Modelo,PseudoR2_train,PseudoR2_test,Acc_train@0.5,Acc_test@0.5,N_parametros_aprox,N_vars_cont,N_vars_categ,Gap_Acc
+Forward AIC,0.2592966412052812,0.2473499815367695,0.7906905055487053,0.7953144266337855,33,8,4,0.0046239210850801404
