@@ -1,4 +1,5 @@
 import json
+from joblib import dump
 import numpy as np
 import pandas as pd
 
@@ -20,6 +21,10 @@ GANADOR_HU33_FILE = TABLES_DIR / "logistica_hu_3_3_modelo_ganador.csv"
 # Salidas
 TABLA_CORTES_FILE = TABLES_DIR / "logistica_hu_3_4_tabla_puntos_corte.csv"
 RESUMEN_FILE      = TABLES_DIR / "logistica_hu_3_4_resumen_punto_corte.json"
+
+MODELO_FINAL_FILE = DATA_DIR / "processed/logistica/logistica_modelo_final.joblib"
+META_MODELO_FINAL_FILE = DATA_DIR / "processed/logistica/logistica_modelo_final_meta.json"
+
 
 # Barrido de puntos de corte
 CORTE_MIN = 0.10
@@ -150,6 +155,10 @@ def main() -> None:
     modelo = LogisticRegression(max_iter=LOGIT_MAX_ITER, solver=LOGIT_SOLVER)
     modelo.fit(X_train_m, y_train)
 
+    # 5.1) Guardar modelo final entrenado
+    dump(modelo, MODELO_FINAL_FILE)
+    print(f"[OK] Modelo final guardado: {MODELO_FINAL_FILE.name}")
+
     # 6) Probabilidades en test
     probs_test = modelo.predict_proba(X_test_m)[:, 1]
 
@@ -173,6 +182,26 @@ def main() -> None:
 
     with open(RESUMEN_FILE, "w", encoding="utf-8") as f:
         json.dump(resumen, f, ensure_ascii=False, indent=2)
+
+    # 8.1) Guardar metadata del modelo final (para HU-3.5)
+    meta_modelo_final = {
+        "modelo": "Regresion logistica",
+        "modelo_ganador": ganador_nombre,
+        "punto_corte": corte_youden['PuntoCorte'],
+        "criterio_punto_corte": "Youden",
+        "variables": {
+            "continuas": var_cont,
+            "categoricas": var_categ
+        },
+        "design_columns": design_cols,
+        "nota": "Modelo final seleccionado tras HU-3.3 y HU-3.4"
+    }
+
+    with open(META_MODELO_FINAL_FILE, "w", encoding="utf-8") as f:
+        json.dump(meta_modelo_final, f, ensure_ascii=False, indent=2)
+
+    print(f"[OK] Metadata del modelo final guardada: {META_MODELO_FINAL_FILE.name}")
+
 
     print(f"[OK] Resumen guardado: {RESUMEN_FILE.name}")
     print("\n[INFO] Óptimo por Accuracy:", {k: corte_acc[k] for k in ["PuntoCorte", "Accuracy", "Sensibilidad", "Especificidad", "Youden"]})
