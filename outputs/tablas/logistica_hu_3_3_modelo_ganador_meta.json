@@ -3,22 +3,30 @@
   "params": {
     "max_candidatos": 4,
     "umbral_gap_acc": 0.05,
-    "metrica_principal": "PseudoR2_test",
-    "metrica_secundaria": "N_parametros_aprox",
+    "metrica_principal_orden": "PseudoR2_test",
+    "metrica_secundaria_orden": "N_parametros_aprox",
+    "tolerancia_pseudoR2": 0.0001,
+    "criterio_ganador": [
+      "max Acc_test@0.5",
+      "PseudoR2_test dentro de 0.0001",
+      "min N_parametros_aprox",
+      "preferir BIC"
+    ],
     "punto_corte_provisional": 0.5
   },
   "n_modelos_hu32": 6,
   "n_candidatos": 4,
   "ganador": {
-    "Modelo": "Forward AIC",
-    "PseudoR2_train": 0.2592966412052812,
-    "PseudoR2_test": 0.2473499815367695,
-    "Acc_train@0.5": 0.7906905055487053,
+    "Modelo": "Stepwise BIC",
+    "PseudoR2_train": 0.2589003834433084,
+    "PseudoR2_test": 0.2473143847667466,
+    "Acc_train@0.5": 0.7902281134401973,
     "Acc_test@0.5": 0.7953144266337855,
-    "N_parametros_aprox": 33,
-    "N_vars_cont": 8,
+    "N_parametros_aprox": 32,
+    "N_vars_cont": 7,
     "N_vars_categ": 4,
-    "Gap_Acc": 0.0046239210850801404
+    "Gap_Acc": 0.00508631319358821,
+    "pref_bic": 0
   },
   "top_resumen": [
     {
