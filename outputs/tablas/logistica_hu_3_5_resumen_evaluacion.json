@@ -1,0 +1,23 @@
+{
+  "modelo_ganador": "Stepwise BIC",
+  "criterio_punto_corte": "Youden",
+  "punto_corte": 0.31,
+  "metricas": {
+    "accuracy": 0.7626387176325524,
+    "sensibilidad": 0.6944444444444444,
+    "especificidad": 0.7933810375670841,
+    "youden": 0.4878254820115284
+  },
+  "matriz_confusion": {
+    "tn": 887,
+    "fp": 231,
+    "fn": 154,
+    "tp": 350
+  },
+  "n_parametros_aprox": 32,
+  "salidas": {
+    "metricas_csv": "D:\\Copias de seguridad\\2025-2026\\Master UCM\\Módulo 7\\Tarea\\modelizacion-prediccion\\outputs\\tablas\\logistica_hu_3_5_metricas_finales.csv",
+    "matriz_confusion_csv": "D:\\Copias de seguridad\\2025-2026\\Master UCM\\Módulo 7\\Tarea\\modelizacion-prediccion\\outputs\\tablas\\logistica_hu_3_5_matriz_confusion.csv",
+    "top_coeficientes_csv": "D:\\Copias de seguridad\\2025-2026\\Master UCM\\Módulo 7\\Tarea\\modelizacion-prediccion\\outputs\\tablas\\logistica_hu_3_5_top_coeficientes.csv"
+  }
+}
