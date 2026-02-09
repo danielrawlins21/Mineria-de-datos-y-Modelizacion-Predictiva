@@ -1,0 +1,23 @@
+{
+  "modelo_ganador": "Stepwise BIC",
+  "rango_cortes": [
+    0.1,
+    0.9
+  ],
+  "n_cortes": 81,
+  "optimo_accuracy": {
+    "PuntoCorte": 0.48,
+    "Accuracy": 0.7928483353884094,
+    "Sensibilidad": 0.5674603174603174,
+    "Especificidad": 0.8944543828264758,
+    "Youden": 0.46191470028679316
+  },
+  "optimo_youden": {
+    "PuntoCorte": 0.31,
+    "Accuracy": 0.7626387176325524,
+    "Sensibilidad": 0.6944444444444444,
+    "Especificidad": 0.7933810375670841,
+    "Youden": 0.4878254820115284
+  },
+  "nota": "El punto de corte definitivo se elige en el informe según el criterio (p.ej. Youden si no hay costes asimétricos)."
+}
