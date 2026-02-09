@@ -10,6 +10,7 @@
   "n_test": 1622,
   "n_vars_cont_total": 15,
   "n_vars_categ_total": 4,
+  "tabla_resumen_file": "D:\\Copias de seguridad\\2025-2026\\Master UCM\\Módulo 7\\Tarea\\modelizacion-prediccion\\outputs\\tablas\\logistica_hu_3_2_seleccion_clasica_resumen.csv",
   "resumen_completo": [
     {
       "Modelo": "Forward AIC",
@@ -160,5 +161,241 @@
       ]
     }
   ],
-  "tabla_resumen_file": "D:\\Copias de seguridad\\2025-2026\\Master UCM\\Módulo 7\\Tarea\\modelizacion-prediccion\\outputs\\tablas\\logistica_hu_3_2_seleccion_clasica_resumen.csv"
+  "top_k_candidatos": 4,
+  "candidatos": {
+    "Forward_AIC": {
+      "pretty_name": "Forward AIC",
+      "pseudoR2_test": 0.24734998153676957,
+      "acc_test_cutoff_0_5": 0.7953144266337855,
+      "n_parametros_aprox": 33,
+      "variables": {
+        "cont": [
+          "DifComAutonPtge",
+          "Age_19_65_pct",
+          "SUPERFICIE",
+          "ForeignersPtge",
+          "ConstructionUnemploymentPtge",
+          "WomanPopulationPtge",
+          "AgricultureUnemploymentPtge",
+          "SameComAutonDiffProvPtge"
+        ],
+        "categ": [
+          "CCAA",
+          "ActividadPpal",
+          "Densidad",
+          "Explotaciones_cat"
+        ]
+      },
+      "design_columns": [
+        "DifComAutonPtge",
+        "Age_19_65_pct",
+        "SUPERFICIE",
+        "ForeignersPtge",
+        "ConstructionUnemploymentPtge",
+        "WomanPopulationPtge",
+        "AgricultureUnemploymentPtge",
+        "SameComAutonDiffProvPtge",
+        "CCAA_Aragón",
+        "CCAA_Asturias",
+        "CCAA_Baleares",
+        "CCAA_Canarias",
+        "CCAA_Cantabria",
+        "CCAA_CastillaLeón",
+        "CCAA_CastillaMancha",
+        "CCAA_Cataluña",
+        "CCAA_ComValenciana",
+        "CCAA_Extremadura",
+        "CCAA_Galicia",
+        "CCAA_Madrid",
+        "CCAA_Murcia",
+        "CCAA_Navarra",
+        "CCAA_PaísVasco",
+        "CCAA_Rioja",
+        "ActividadPpal_Construccion",
+        "ActividadPpal_Industria",
+        "ActividadPpal_Otro",
+        "ActividadPpal_Servicios",
+        "Densidad_Baja",
+        "Densidad_Desconocida",
+        "Densidad_MuyBaja",
+        "Explotaciones_cat_≤137"
+      ],
+      "coeficientes_csv": "D:\\Copias de seguridad\\2025-2026\\Master UCM\\Módulo 7\\Tarea\\modelizacion-prediccion\\data\\results\\logistica\\parametros\\coeficientes_Forward_AIC.csv"
+    },
+    "Forward_BIC": {
+      "pretty_name": "Forward BIC",
+      "pseudoR2_test": 0.24734998153676957,
+      "acc_test_cutoff_0_5": 0.7953144266337855,
+      "n_parametros_aprox": 33,
+      "variables": {
+        "cont": [
+          "DifComAutonPtge",
+          "Age_19_65_pct",
+          "SUPERFICIE",
+          "ForeignersPtge",
+          "ConstructionUnemploymentPtge",
+          "WomanPopulationPtge",
+          "AgricultureUnemploymentPtge",
+          "SameComAutonDiffProvPtge"
+        ],
+        "categ": [
+          "CCAA",
+          "ActividadPpal",
+          "Densidad",
+          "Explotaciones_cat"
+        ]
+      },
+      "design_columns": [
+        "DifComAutonPtge",
+        "Age_19_65_pct",
+        "SUPERFICIE",
+        "ForeignersPtge",
+        "ConstructionUnemploymentPtge",
+        "WomanPopulationPtge",
+        "AgricultureUnemploymentPtge",
+        "SameComAutonDiffProvPtge",
+        "CCAA_Aragón",
+        "CCAA_Asturias",
+        "CCAA_Baleares",
+        "CCAA_Canarias",
+        "CCAA_Cantabria",
+        "CCAA_CastillaLeón",
+        "CCAA_CastillaMancha",
+        "CCAA_Cataluña",
+        "CCAA_ComValenciana",
+        "CCAA_Extremadura",
+        "CCAA_Galicia",
+        "CCAA_Madrid",
+        "CCAA_Murcia",
+        "CCAA_Navarra",
+        "CCAA_PaísVasco",
+        "CCAA_Rioja",
+        "ActividadPpal_Construccion",
+        "ActividadPpal_Industria",
+        "ActividadPpal_Otro",
+        "ActividadPpal_Servicios",
+        "Densidad_Baja",
+        "Densidad_Desconocida",
+        "Densidad_MuyBaja",
+        "Explotaciones_cat_≤137"
+      ],
+      "coeficientes_csv": "D:\\Copias de seguridad\\2025-2026\\Master UCM\\Módulo 7\\Tarea\\modelizacion-prediccion\\data\\results\\logistica\\parametros\\coeficientes_Forward_BIC.csv"
+    },
+    "Stepwise_AIC": {
+      "pretty_name": "Stepwise AIC",
+      "pseudoR2_test": 0.2473143847667466,
+      "acc_test_cutoff_0_5": 0.7953144266337855,
+      "n_parametros_aprox": 32,
+      "variables": {
+        "cont": [
+          "DifComAutonPtge",
+          "Age_19_65_pct",
+          "SUPERFICIE",
+          "ForeignersPtge",
+          "ConstructionUnemploymentPtge",
+          "WomanPopulationPtge",
+          "AgricultureUnemploymentPtge"
+        ],
+        "categ": [
+          "CCAA",
+          "ActividadPpal",
+          "Densidad",
+          "Explotaciones_cat"
+        ]
+      },
+      "design_columns": [
+        "DifComAutonPtge",
+        "Age_19_65_pct",
+        "SUPERFICIE",
+        "ForeignersPtge",
+        "ConstructionUnemploymentPtge",
+        "WomanPopulationPtge",
+        "AgricultureUnemploymentPtge",
+        "CCAA_Aragón",
+        "CCAA_Asturias",
+        "CCAA_Baleares",
+        "CCAA_Canarias",
+        "CCAA_Cantabria",
+        "CCAA_CastillaLeón",
+        "CCAA_CastillaMancha",
+        "CCAA_Cataluña",
+        "CCAA_ComValenciana",
+        "CCAA_Extremadura",
+        "CCAA_Galicia",
+        "CCAA_Madrid",
+        "CCAA_Murcia",
+        "CCAA_Navarra",
+        "CCAA_PaísVasco",
+        "CCAA_Rioja",
+        "ActividadPpal_Construccion",
+        "ActividadPpal_Industria",
+        "ActividadPpal_Otro",
+        "ActividadPpal_Servicios",
+        "Densidad_Baja",
+        "Densidad_Desconocida",
+        "Densidad_MuyBaja",
+        "Explotaciones_cat_≤137"
+      ],
+      "coeficientes_csv": "D:\\Copias de seguridad\\2025-2026\\Master UCM\\Módulo 7\\Tarea\\modelizacion-prediccion\\data\\results\\logistica\\parametros\\coeficientes_Stepwise_AIC.csv"
+    },
+    "Stepwise_BIC": {
+      "pretty_name": "Stepwise BIC",
+      "pseudoR2_test": 0.2473143847667466,
+      "acc_test_cutoff_0_5": 0.7953144266337855,
+      "n_parametros_aprox": 32,
+      "variables": {
+        "cont": [
+          "DifComAutonPtge",
+          "Age_19_65_pct",
+          "SUPERFICIE",
+          "ForeignersPtge",
+          "ConstructionUnemploymentPtge",
+          "WomanPopulationPtge",
+          "AgricultureUnemploymentPtge"
+        ],
+        "categ": [
+          "CCAA",
+          "ActividadPpal",
+          "Densidad",
+          "Explotaciones_cat"
+        ]
+      },
+      "design_columns": [
+        "DifComAutonPtge",
+        "Age_19_65_pct",
+        "SUPERFICIE",
+        "ForeignersPtge",
+        "ConstructionUnemploymentPtge",
+        "WomanPopulationPtge",
+        "AgricultureUnemploymentPtge",
+        "CCAA_Aragón",
+        "CCAA_Asturias",
+        "CCAA_Baleares",
+        "CCAA_Canarias",
+        "CCAA_Cantabria",
+        "CCAA_CastillaLeón",
+        "CCAA_CastillaMancha",
+        "CCAA_Cataluña",
+        "CCAA_ComValenciana",
+        "CCAA_Extremadura",
+        "CCAA_Galicia",
+        "CCAA_Madrid",
+        "CCAA_Murcia",
+        "CCAA_Navarra",
+        "CCAA_PaísVasco",
+        "CCAA_Rioja",
+        "ActividadPpal_Construccion",
+        "ActividadPpal_Industria",
+        "ActividadPpal_Otro",
+        "ActividadPpal_Servicios",
+        "Densidad_Baja",
+        "Densidad_Desconocida",
+        "Densidad_MuyBaja",
+        "Explotaciones_cat_≤137"
+      ],
+      "coeficientes_csv": "D:\\Copias de seguridad\\2025-2026\\Master UCM\\Módulo 7\\Tarea\\modelizacion-prediccion\\data\\results\\logistica\\parametros\\coeficientes_Stepwise_BIC.csv"
+    }
+  },
+  "parametros_dir": "D:\\Copias de seguridad\\2025-2026\\Master UCM\\Módulo 7\\Tarea\\modelizacion-prediccion\\data\\results\\logistica\\parametros",
+  "nota": "Los coeficientes guardados se usarán en HU-3.5 (interpretación). El punto de corte óptimo se calcula en HU-3.4; aquí se reporta accuracy@0.5 solo como referencia."
 }
