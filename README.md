@@ -124,6 +124,8 @@ El proyecto está diseñado para ser completamente reproducible:
 
 # 👤 Autor
 
-Nombre del estudiante\
-Asignatura / Máster\
-Universidad
+Nombre del estudiante: Daniel Rawlins \
+Asignatura:  TAREA DE MINERÍA DE DATOS Y 
+MODELIZACIÓN PREDICTIVA/ Máster: Máster Big Data, Data Science y Inteligencia Artificial\
+Universidad Complutense de Madrid
+
