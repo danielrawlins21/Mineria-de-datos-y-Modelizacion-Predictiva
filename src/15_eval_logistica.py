@@ -25,7 +25,7 @@ TABLA_TOP_COEF_FILE = TABLES_DIR / "logistica_hu_3_5_top_coeficientes.csv"
 RESUMEN_FILE = TABLES_DIR / "logistica_hu_3_5_resumen_evaluacion.json"
 
 # Parámetros
-TOP_K_COEF = 15
+TOP_K_COEF = 30
 
 
 def cargar_modelo_y_meta():
@@ -82,7 +82,7 @@ def evaluar(modelo, X_test_m: pd.DataFrame, y_test: pd.Series, cutoff: float):
     }, probs, y_pred, cm
 
 
-def top_coeficientes(modelo, feature_names, k=15):
+def top_coeficientes(modelo, feature_names, k = 30):
     if not hasattr(modelo, "coef_"):
         return pd.DataFrame(columns=["Variable", "Coeficiente", "AbsCoeficiente"])
 

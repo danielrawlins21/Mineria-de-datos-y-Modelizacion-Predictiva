@@ -2,11 +2,13 @@ import json
 from joblib import dump
 import numpy as np
 import pandas as pd
+import matplotlib.pyplot as plt
+
 
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import confusion_matrix
 
-from config import DATA_DIR, TABLES_DIR
+from config import DATA_DIR, TABLES_DIR, OUTPUT_DIR
 from FuncionesMineria import crear_data_modelo
 
 # ============================================================
@@ -21,6 +23,8 @@ GANADOR_HU33_FILE = TABLES_DIR / "logistica_hu_3_3_modelo_ganador.csv"
 # Salidas
 TABLA_CORTES_FILE = TABLES_DIR / "logistica_hu_3_4_tabla_puntos_corte.csv"
 RESUMEN_FILE      = TABLES_DIR / "logistica_hu_3_4_resumen_punto_corte.json"
+FIG_FILE = OUTPUT_DIR / "figuras/logistica_hu_3_4_corte_accuracy_youden.png"
+
 
 MODELO_FINAL_FILE = DATA_DIR / "processed/logistica/logistica_modelo_final.joblib"
 META_MODELO_FINAL_FILE = DATA_DIR / "processed/logistica/logistica_modelo_final_meta.json"
@@ -170,6 +174,26 @@ def main() -> None:
     # 8) Extraer óptimos (accuracy y Youden)
     corte_acc = tabla_cortes.loc[tabla_cortes["Accuracy"].idxmax()].to_dict()
     corte_youden = tabla_cortes.loc[tabla_cortes["Youden"].idxmax()].to_dict()
+
+    # 7.1) Guardar gráfico comparativo (Accuracy vs Youden) por punto de corte
+    corte_elegido = corte_youden["PuntoCorte"]
+
+    plt.figure(figsize=(7, 4))
+    plt.plot(tabla_cortes["PuntoCorte"], tabla_cortes["Accuracy"], label="Accuracy")
+    plt.plot(tabla_cortes["PuntoCorte"], tabla_cortes["Youden"], label="Índice de Youden")
+    plt.axvline(corte_elegido, linestyle="--", label="Corte elegido (Youden = 0.31)")
+
+    plt.xlabel("Punto de corte")
+    plt.ylabel("Valor de la métrica")
+    plt.legend()
+    plt.grid(True)
+    plt.tight_layout()
+
+    plt.savefig(FIG_FILE, dpi=300, bbox_inches="tight")
+    plt.close()
+
+    print(f"[OK] Figura guardada: {FIG_FILE.name}")
+
 
     resumen = {
         "modelo_ganador": ganador_nombre,
